@@ -1,10 +1,11 @@
 #On choisit une debian
 FROM debian:latest
 
-MAINTAINER DiouxX "github@diouxx.be"
+MAINTAINER jackzhou "z0x010@126.com"
 
 #Ne pas poser de question à l'installation
 ENV DEBIAN_FRONTEND noninteractive
+ENV TIMEZONE Asia/Shanghai
 
 #Installation d'apache et de php5 avec extension
 RUN apt update \
